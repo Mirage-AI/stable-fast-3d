@@ -10,8 +10,6 @@ setup(
     description='Stable Fast 3D',
     url='https://github.com/Mirage-AI/stable-fast-3d',
     packages=find_packages(),
-    install_requires=parse_requirements('requirements.txt') + [
-        'git+https://github.com/vork/PyNanoInstantMeshes.git'
-    ],
+    install_requires=parse_requirements('requirements.txt'),
     python_requires='>=3.6',
 )
