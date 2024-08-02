@@ -127,13 +127,8 @@ class SF3D(BaseModule):
         )
         self.isosurface_helper = MarchingTetrahedraHelper(
             self.cfg.isosurface_resolution,
-            os.path.join(
-                os.path.dirname(__file__),
-                "..",
-                "load",
-                "tets",
-                f"{self.cfg.isosurface_resolution}_tets.npz",
-            ),
+            # TODO: add this path to config
+            "/app/tets/160_tets.npz",
         )
 
         self.baker = TextureBaker()
