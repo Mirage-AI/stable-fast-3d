@@ -10,9 +10,7 @@ from torch import Tensor
 class TextureBaker(nn.Module):
     def __init__(self):
         super().__init__()
-        self.baker = slangtorch.loadModule(
-            os.path.join(os.path.dirname(__file__), "texture_baker.slang")
-        )
+        self.baker = slangtorch.loadModule("/app/texture_baker.slang")
 
     def rasterize(
         self,
